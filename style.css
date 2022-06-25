@@ -1,0 +1,387 @@
+/*СТИЛИ ВСЕХ ЭЛЕМЕНТОВ ВИДИМОЙ ЧАСТИ САЙТА  */
+
+
+html {
+	height: 100%; 
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;   
+}
+
+body {
+	margin: 0;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+
+	   
+}
+.container {
+    background-image: url(images/fon4.jpg); 
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+/*===============================
+       Стилі для блока Шапка
+=================================*/
+#shapka {
+	width: 100%;
+    height: 250px;
+}
+
+#logo {
+    width: 500px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 35px;
+}
+
+#logo img {
+	width: 100%;
+    position: absolute;
+}
+
+#logo2 {
+    width: 230px;
+    position: relative;
+    float: left;
+}
+
+.graficlogo {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+#logo3 {
+    width: 230px;
+    position: relative;
+    float: right;
+}
+
+#menu {
+    position: relative;
+    top: 230px;
+    text-transform: uppercase;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    left: 70%;
+}
+
+#menu a {
+    text-decoration: blink;
+    font-size: 13px;
+    text-align: center;
+    padding: 16px 15px 2px;
+    color: #090909;
+    transition: color .2s linear;
+    font-weight: bold;
+} 
+
+#menu a:hover {
+    border-bottom: 2px solid #000;
+    background: #ff980036;
+
+}
+
+/*==========================================
+    Стилі для форми замовлення таксі
+===========================================*/
+
+.modal {
+    display: block;
+    width: 275px;
+    height: 290px;
+    padding: 12px;
+    background-image: url(images/bgfon1.jpg);
+    position: absolute;
+    top: 275px;
+    float: left;
+    background-size: cover;
+    margin: 15px;
+}
+
+.modal .zamovutu {
+    position: absolute;
+    top: 265px;
+    width: 25%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal .zamovutu button {
+    background: none;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: 0;
+}
+
+.modal .zamovutu img {
+    width: 100%;
+    cursor: pointer;
+}
+
+.modal .zvidkila {
+    height: 80px;
+    width: 100%;
+    position: absolute;
+    top: -5px;
+}
+
+.modal .zvidkila input {
+    width: 190px;
+    height: 25px;
+    position: absolute;
+    top: 45px;
+}
+
+.modal .zvidkila img {
+    height: 50px;
+    position: absolute;
+    top: 30px;
+    left: 200px;
+}
+
+.modal .kydu {
+    height: 80px;
+    width: 100%;
+    position: absolute;
+    top: 67px;
+}
+
+.modal .kydu input {
+    width: 190px;
+    height: 25px;
+    position: absolute;
+    top: 45px;
+}
+
+.modal .kydu img {
+    width: 65px;
+    position: absolute;
+    top: 30px;
+    left: 195px;
+}
+
+.modal .telephon {
+    height: 80px;
+    width: 100%;
+    position: absolute;
+    top: 140px;
+}
+
+.modal .telephon input {
+    width: 190px;
+    height: 25px;
+    position: absolute;
+    top: 45px;
+}
+.modal .telephon img {
+    height: 55px;
+    position: absolute;
+    top: 35px;
+    left: 195px;
+}
+
+/*==========================================
+    Стилі для головної сторінки
+===========================================*/
+#video {
+    position: absolute;
+    top: 450px;
+    left: 1280px;
+}
+
+#radio {
+    position: absolute;
+    top: 280px;
+    display: block;
+    left: 1280px;
+    width: 220px;
+}
+
+#radio audio {
+   width: 100%;
+   height: 30px;
+}
+
+#radio img {
+    width: 100%;
+    height: 60%;
+}
+
+.about_us {
+     margin-left: auto;
+    margin-right: auto;
+    width: 20em
+}
+
+/*==========================================
+    Стилі для автопарку
+===========================================*/
+#park {
+    position: absolute;
+    font-size: 15px;
+    width: 1650px;
+    
+}
+
+#park img {
+   /*width: 900px;*/
+   top: 170px;
+   left: 360px;
+   position: absolute;
+    
+}
+
+#park h2 {
+    color: firebrick;
+    display: block;
+    text-align: center;
+}
+
+#park p {
+    display: block;
+    text-align: center;
+}
+/*==========================================
+    Стилі для відгуків
+===========================================*/
+#vidgyku {
+   padding-left: 490px;
+  }
+
+#vidgyku img {
+    width: 1020px;
+    padding-top: 15px 
+}
+
+.bttn {
+    padding: 15px;
+    width: 75%;
+    border-radius: 10px;
+    border: 2px solid black;
+    background: yellow;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#form-vidgukiv {
+    display: inline-block;
+  }  
+/*==========================================
+    Стилі для карти міста
+===========================================*/
+#map {
+    top: 280px;
+    display: block;
+    position: absolute;
+    left: 480px;
+}
+
+/*==========================================
+    Стилі для вкладки послуги
+===========================================*/
+.poslygu {
+    margin-left: auto;
+    margin-right: auto;
+    width: 35em;
+    font-size: 20px;
+}
+.poslygu:after {
+    content: "";
+    display: block;
+    width: 600px;
+    height: 3px;
+    background-color: black; 
+}
+
+
+
+/*=======================
+форма отправки отзывов
+========================*/
+
+.form input{
+ width: 400px;
+}
+ 
+
+.form textarea{
+ width: 400px;
+ max-width: 400px;
+ min-width: 400px;
+ line-height: 150%;
+}
+
+
+.confirm{
+ float: none !important;
+}
+ 
+.form input[type="checkbox"]{
+ width: auto;
+}
+
+
+.form input, .form textarea, .form select{
+ padding: 9px;
+ border: 2px solid yellow;
+ border-radius: 5px;
+ box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+ -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+ -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+ background: #FFF url('bg.jpg') left top repeat-x;
+}
+
+
+
+.form input:hover, .form textarea:hover, .form select:hover,
+.form input:focus, .form textarea:focus, .form select:focus{
+ border-color: #C9C9C9;
+ box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+ -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+ -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+
+.form p{
+ margin-bottom: 20px;
+}
+
+
+.form label{
+ width: 180px;
+ float: left;
+ color: black;
+ padding-top: 5px;
+}
+
+
+.form .submit input{
+ width: auto;
+ background: #617798;
+ color: #FFF;
+ padding: 9px 15px;
+ border: 0;
+ font-size: 14px;
+ cursor: pointer;
+}
+ 
+.form .submit input:hover{
+ background: #2B415E;
+}
+
+
+.formTextRed{
+ color: red;
+}
+
+.bttn a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 16px;
+}

@@ -1,0 +1,588 @@
+/* ФАЙЛ СОДЕРЖИТ СТИЛИ ВСЕХ ЭЛЕМЕНТОВ САЙТА */
+
+html {
+	height: 100%; 
+}
+
+body {
+ 	margin: 0;
+}
+/*общий контейнер всех элементов*/
+#container {
+	background: #F0FFF0;
+    width: 100%;
+    height: 100%    
+}
+
+/*Левая часть админ панели с навигацией */
+.sidebar {
+	background: #2F4F4F;
+	height: 100%;
+	width: 12%;
+  float:left;
+}
+
+.nav-part {
+    width: 100%;
+    height: 100%;
+}
+
+/* Правый блок админ панели */
+.info {
+
+   width: 80%;
+   padding-left: 50px;
+   padding-right: 50px;
+   height: 100%;
+   float: right;
+}
+
+/*Блок авторизации */
+.info-log {
+     padding-right: 360px;
+}
+
+a {
+	text-decoration: none;  
+}
+
+/* Список навигации админ-панели*/
+.nav li  {
+	padding: 45px 0px 0px 0px;
+	font-size: 25px;
+    list-style-type: none;
+}
+
+
+.nav li a {
+	color: white;
+}
+
+/* кнопки функционала админ панели*/
+/* удаление и редактирование*/
+.edit,
+.delete {
+    
+    padding: 5px;
+    border-radius: 7px;
+    background: #2F4F4F;
+    font-weight: bold;
+    color: white;
+}
+
+/*дабавление */
+.adding {
+   
+    border-radius: 8px;
+    padding: 10px 20px 10px 20px;
+    background: #2F4F4F;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+   
+}
+
+.add-text {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+/*Добавление отзывов */
+.bttn {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    font-weight: bold;
+    background-color: #2F4F4F;
+    font-size: 14px;
+    border-radius: 9px;
+    color: white;
+}
+
+input[type=submit]:hover {
+    background-color: #B0E0E6;
+    color: black;
+    font-weight: bold;
+    border: 2px solid black; 
+
+}
+
+
+/******C H A T********/
+
+html {
+    /*height: 100%;*/
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    background: #F0FFF0;
+  
+}
+
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+/*=====================  
+Шапка сайта
+====================*/
+#shapka {
+    width: 100%;
+    height: 75px;
+    background: #d07402;
+}
+
+#logo {
+    width: 465px;
+    height: 100%;
+    position: relative;
+    float: left;
+}
+
+#logo img {
+    width: 75%;
+    position: absolute;
+    left: 0px;
+}
+
+#logo span {
+   color: bisque;
+    font-size: 30px;
+    position: absolute;
+    top: 33px;
+    left: 80px;
+}
+#menu {
+    float: right;
+    height: 100%;
+}
+
+#menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 28px;
+    height: calc(100% - 20px);
+    display: block;
+    float: left;
+    padding: 20px 10px 0;
+}
+
+#menu a:hover {
+    background: #90550c;
+
+}
+
+/*=================
+Основной блок с поиском и контактами
+=================*/
+#content {
+    background: #d1d6d3;
+    margin: 0 auto;
+    width: 70%;
+    height: 94%;
+    border: 2px solid #2F4F4F; 
+
+}
+/*==================
+Левый блок с поиском и контактами
+=================*/
+#users {
+    width: 30%;
+    height: 100%;
+    float: left;
+    background-color: thistle;
+}
+/*=====================
+Поиск
+====================*/
+#search {
+    height: 35px;
+    padding: 10px;
+}
+
+#search input {
+    background: white;
+    height: 100%;
+    border: none;
+    padding: 0;
+    margin: 0;
+    float: left;
+    margin-right: 7px;
+    width: calc(75% - 14px);
+    outline: none;
+    padding: 0 7px;
+}
+
+#search button {
+    background: white;
+    width: 43px;
+    height: 35px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#search button:active {
+    background: #c9d0da; 
+}
+
+#search button img {
+    width: 100%;
+    height: 100%;
+
+}
+
+/*=================
+Контакты
+=================*/
+#drivers-list li a {
+    color: black;
+}
+
+#list {
+    height: calc(100% - 55px);
+    overflow-y: auto; 
+}
+
+#list ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+}
+
+#list ul li {
+    padding: 10px;
+    position: relative;
+    width: calc(100% - 20px);
+}
+
+#list ul .avatar {
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin-right: 10px; 
+}
+
+#list ul .avatar img {
+    width: 100%;
+    height:100%;
+}
+
+#list h2 {
+    margin: 0 0 5px 0;
+}
+
+#list p{
+    margin: 0;
+}
+
+#list ul li .time {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/*==============
+Стили скролла на codepen.io
+===============*/
+#list::-webkit-scrollbar-track,
+#list-messages::-webkit-scrollbar-track,
+.modal .content::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+    border-radius: 10px;
+}
+
+#list::-webkit-scrollbar,
+#list-messages::-webkit-scrollbar,
+.modal .content::-webkit-scrollbar {
+    width: 7px;
+    background-color: #F5F5F5;
+}
+
+#list::-webkit-scrollbar-thumb,
+#list-messages::-webkit-scrollbar-thumb,
+.modal .content::-webkit-scrollbar-thumb {
+    background-color: #3366FF;
+    border-radius: 10px;
+    background-image: -webkit-linear-gradient(0deg,
+                                              rgba(255, 255, 255, 0.5) 25%,
+                                              transparent 25%,
+                                              transparent 50%,
+                                              rgba(255, 255, 255, 0.5) 50%,
+                                              rgba(255, 255, 255, 0.5) 75%,
+                                              transparent 75%,
+                                              transparent)
+}
+
+/*===================
+Стили переписки с пользователем
+====================*/
+
+#messages {
+    float: right;
+    width: 65%;
+    height: 100%;
+}
+
+#list-messages {
+    overflow-y: auto;
+    height: 80%;
+}
+
+#messages ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#messages ul li {
+    padding: 10px;
+    position: relative;
+    width: calc(100% - 20px);
+}
+
+#messages ul .avatar {
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin-right: 10px; 
+}
+
+#messages ul .avatar img {
+    width: 100%;
+    height: 100%;
+}
+
+#messages ul h2 {
+    margin: 0 0 5px 0;
+}
+
+#messages ul p {
+    margin: 0;
+}
+
+#messages ul li .time {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.forms {
+    display: inline-block;
+}
+
+
+/*===================
+Стили формы для отправки сообщений
+===================*/
+#form {
+    padding: 10px;
+    height: calc(20% - 20px);
+}
+
+#form button {
+    border: none;
+    outline: none;
+    background: none;
+    width: 14%;
+    height: 64%;
+    cursor: pointer;
+    float: right;
+}
+#form button img {
+    width: 100%;
+    height: 100%;
+}
+
+#form textarea {
+    width: 82%;
+    height: 75%;
+}
+
+/*==================
+Стили для модальных окон
+==================*/
+.modal {
+    display: none;
+    width: 360px;
+    background: white;
+    border-radius: 10px;
+    position: absolute;
+    border: 2px solid #188b90;
+    top: 100px;
+    left: calc(50% - 200px);
+    padding: 20px;
+    max-height: 400px;
+    
+}
+
+.modal .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+/*
+Модальное окно с контактами
+*/
+#contacts-modal ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+}
+
+#contacts-modal ul li {
+    padding: 10px;
+    position: relative;
+    width: calc(100% - 20px);
+}
+
+#contacts-modal ul .avatar {
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin-right: 10px; 
+}
+
+#contacts-modal ul .avatar img {
+    width: 100%;
+    height:100%;
+}
+
+#contacts-modal h2 {
+    margin: 20px;
+}
+
+#contacts-modal .content {
+    overflow-y: auto;
+    height: 380px;
+    margin-top: 20px;
+}
+/*
+Модальное окно авторизации
+*/
+#exit-modal {
+    height: 300px;
+    background-image: url(../images-chat/bg.jpg);
+    padding: 22px;
+}
+
+#email {
+    width: 360px;
+    height: 100px;
+}
+
+#email textarea {
+    width: 95%;
+    height: 50%;
+    margin: 5px;
+    border: 2px solid blue;
+    text-align: center;
+    font-size: 15px;
+}
+
+#password {
+    width: 360px;
+    height: 100px;
+}
+
+#password textarea {
+    width: 95%;
+    height: 50%;
+    margin: 5px;
+    border: 2px solid blue;
+    text-align: center;
+    font-size: 15px;
+}
+
+#exit-modal button {
+    margin-left: 135px;
+    width: 90px;
+    height: 90px;
+    padding: 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#exit-modal button img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/******************************
+ф о р м а   о т з ы в о в 
+********************************/
+
+body{
+ background: #F6F9F9;
+}
+ 
+.form p{
+ margin-bottom: 20px;
+}
+ 
+.form label{
+ width: 180px;
+ float: left;
+ color: #999;
+ padding-top: 5px;
+}
+ 
+.form input{
+ width: 400px;
+}
+ 
+.form textarea{
+ width: 400px;
+ max-width: 400px;
+ min-width: 400px;
+ line-height: 150%;
+}
+ 
+ 
+.form input, .form textarea, .form select{
+ padding: 9px;
+ border: 1px solid  #C9C9C9;
+ border-radius: 5px;
+ box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+ -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+ -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+ background: #FFF url('bg.jpg') left top repeat-x;
+}
+ 
+
+.form .submit input{
+ width: auto;
+ background: #617798;
+ color: #FFF;
+ padding: 9px 15px;
+ border: 0;
+ font-size: 14px;
+}
+ 
+.form .submit input:hover{
+ background: #2B415E;
+}
+
+
+
